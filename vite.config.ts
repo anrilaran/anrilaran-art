@@ -11,18 +11,18 @@ const copyPublicPlugin = {
   apply: 'build',
   enforce: 'post',
   writeBundle() {
-    // Теперь пути указывают строго ВНУТРИ папки client
-    const publicDir = path.resolve(import.meta.dirname, 'public'); 
-    const distPublicDir = path.resolve(import.meta.dirname, 'dist', 'public');
+    // Никаких динамических путей, только относительные от корня папки client
+    const publicDir = path.resolve("public");
+    const distPublicDir = path.resolve("dist/public");
     
     if (fs.existsSync(publicDir)) {
+      if (!fs.existsSync(distPublicDir)) fs.mkdirSync(distPublicDir, { recursive: true });
       const files = fs.readdirSync(publicDir);
       files.forEach(file => {
         const src = path.join(publicDir, file);
         const dest = path.join(distPublicDir, file);
         const stat = fs.statSync(src);
         if (stat.isDirectory()) {
-          if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
           fs.cpSync(src, dest, { recursive: true, force: true });
         } else {
           fs.copyFileSync(src, dest);
@@ -36,13 +36,13 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 
 export default defineConfig({
   plugins,
-  // Теперь пути к src и alias идут относительно корня (client)
-  resolve: { alias: { "@": path.resolve(import.meta.dirname, "src") } },
-  root: import.meta.dirname, 
-  publicDir: path.resolve(import.meta.dirname, 'public'),
-  // Билд теперь идет в client/dist/public, что полностью устраивает Cloudflare
+  resolve: { 
+    alias: { "@": path.resolve("src") } 
+  },
+  root: "./",
+  publicDir: "public",
   build: { 
-    outDir: path.resolve(import.meta.dirname, "dist/public"), 
+    outDir: "dist/public", 
     emptyOutDir: true 
   },
   server: {
