@@ -5,15 +5,19 @@ import path from "path";
 import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 import fs from "fs";
+import { fileURLToPath } from "url";
+
+// Железобетонное определение папки client на диске Cloudflare
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const copyPublicPlugin = {
   name: 'copy-public',
   apply: 'build',
   enforce: 'post',
   writeBundle() {
-    // Никаких динамических путей, только относительные от корня папки client
-    const publicDir = path.resolve("public");
-    const distPublicDir = path.resolve("dist/public");
+    const publicDir = path.resolve(__dirname, 'public');
+    const distPublicDir = path.resolve(__dirname, 'dist', 'public');
     
     if (fs.existsSync(publicDir)) {
       if (!fs.existsSync(distPublicDir)) fs.mkdirSync(distPublicDir, { recursive: true });
@@ -37,12 +41,14 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 export default defineConfig({
   plugins,
   resolve: { 
-    alias: { "@": path.resolve("src") } 
+    alias: { "@": path.resolve(__dirname, "src") } 
   },
-  root: "./",
-  publicDir: "public",
+  // Точка отсчета для Vite — строго папка client, где лежит этот конфиг
+  root: __dirname,
+  publicDir: path.resolve(__dirname, 'public'),
   build: { 
-    outDir: "dist/public", 
+    // Сборка пойдет строго в client/dist/public, как и ждет Cloudflare
+    outDir: path.resolve(__dirname, "dist/public"), 
     emptyOutDir: true 
   },
   server: {
