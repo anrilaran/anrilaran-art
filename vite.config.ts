@@ -1,17 +1,17 @@
-import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
-import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
-import { defineConfig } from "vite";
-import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 import fs from "fs";
+import path from "path"; // Убедись, что импорт path есть в начале файла
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+// ... (оставь свои остальные импорты)
 
 const copyPublicPlugin = {
   name: 'copy-public',
   apply: 'build',
   enforce: 'post',
   writeBundle() {
-    const publicDir = path.resolve(import.meta.dirname, 'client', 'public');
+    // Теперь пути указывают строго внутри папки client
+    const publicDir = path.resolve(import.meta.dirname, 'public'); 
     const distPublicDir = path.resolve(import.meta.dirname, 'dist', 'public');
     
     if (fs.existsSync(publicDir)) {
@@ -35,10 +35,13 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 
 export default defineConfig({
   plugins,
-  resolve: { alias: { "@": path.resolve(import.meta.dirname, "client", "src") } },
-  root: path.resolve(import.meta.dirname, "client"),
-  publicDir: path.resolve(import.meta.dirname, 'client', 'public'),
-  build: { outDir: path.resolve(import.meta.dirname, "dist/public"), emptyOutDir: true },
+  resolve: { alias: { "@": path.resolve(import.meta.dirname, "src") } },
+  root: import.meta.dirname, // Теперь корень — это текущая папка client
+  publicDir: path.resolve(import.meta.dirname, 'public'),
+  build: { 
+    outDir: path.resolve(import.meta.dirname, "dist/public"), 
+    emptyOutDir: true 
+  },
   server: {
     allowedHosts: true
   }
