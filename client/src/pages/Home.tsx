@@ -198,7 +198,7 @@ export default function Home() {
                 playsInline 
                 className="w-full h-auto object-cover"
                 style={{ aspectRatio: '16/9' }}
-                src="/hero-video.mp4"
+                src="https://www.dropbox.com/scl/fi/6dmgui9cxjbuojuarl7nb/hero-video.mp4?rlkey=j4srbpwv9b37vrf99udisr5wo&st=rels7c5p&dl=1"
               >
                 Your browser does not support the video tag.
               </video>
