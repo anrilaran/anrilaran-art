@@ -173,11 +173,11 @@ export default function Home() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 py-4 px-4 space-y-3 animate-in fade-in slide-in-from-top-2">
-            <a href="#about" onClick={closeMobileMenu} id="nav_about_mobile" className="block py-2 hover:text-blue-600 transition">Обо мне</a>
-            <a href="#works" onClick={closeMobileMenu} id="nav_works_mobile" className="block py-2 hover:text-blue-600 transition">Работы</a>
-            <a href="#exhibitions" onClick={closeMobileMenu} id="nav_exhibitions_mobile" className="block py-2 hover:text-blue-600 transition">Выставки</a>
-            <a href="#media" onClick={closeMobileMenu} id="nav_media_mobile" className="block py-2 hover:text-blue-600 transition">Медиа</a>
-            <a href="#contact" onClick={closeMobileMenu} id="nav_contact_mobile" className="block py-2 hover:text-blue-600 transition">Контакты</a>
+            <a href="#about" onClick={closeMobileMenu} id="nav_about_mobile" className="block py-2 hover:text-blue-600 transition">Манифест</a>
+            <a href="#works" onClick={closeMobileMenu} id="nav_works_mobile" className="block py-2 hover:text-blue-600 transition">Полотна</a>
+            <a href="#exhibitions" onClick={closeMobileMenu} id="nav_exhibitions_mobile" className="block py-2 hover:text-blue-600 transition">Интервенции</a>
+            <a href="#media" onClick={closeMobileMenu} id="nav_media_mobile" className="block py-2 hover:text-blue-600 transition">Дискурс</a>
+            <a href="#contact" onClick={closeMobileMenu} id="nav_contact_mobile" className="block py-2 hover:text-blue-600 transition">Координаты</a>
           </div>
         )}
       </nav>
