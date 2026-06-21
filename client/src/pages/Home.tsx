@@ -81,11 +81,11 @@ export default function Home() {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-4 md:gap-8 text-xs md:text-sm font-normal items-center">
-            <a href="#about" id="nav_about" className="hover:text-blue-600 transition">Обо мне</a>
-            <a href="#works" id="nav_works" className="hover:text-blue-600 transition">Работы</a>
-            <a href="#exhibitions" id="nav_exhibitions" className="hover:text-blue-600 transition">Выставки</a>
-            <a href="#media" id="nav_media" className="hover:text-blue-600 transition">Медиа</a>
-            <a href="#contact" id="nav_contact" className="hover:text-blue-600 transition">Контакты</a>
+            <a href="#about" id="nav_about" className="hover:text-blue-600 transition">Манифест</a>
+            <a href="#works" id="nav_works" className="hover:text-blue-600 transition">Полотна</a>
+            <a href="#exhibitions" id="nav_exhibitions" className="hover:text-blue-600 transition">Интервенции</a>
+            <a href="#media" id="nav_media" className="hover:text-blue-600 transition">Дискурс</a>
+            <a href="#contact" id="nav_contact" className="hover:text-blue-600 transition">Координаты</a>
             
             {/* Desktop Language Switcher */}
             <div className="relative ml-4 border-l border-gray-300 pl-4">
@@ -208,7 +208,7 @@ export default function Home() {
             Форма которая говорит
           </h1>
           <p id="hero_subtitle" className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 md:mb-8 leading-relaxed">
-            Искусство как зеркало, отражающее сокровенные эмоции и желания
+            Полиформический экспрессионизм: резонанс воли внутри живой партитуры
           </p>
           <div className="flex gap-3 md:gap-4 justify-center flex-wrap">
             <Button
@@ -239,13 +239,13 @@ export default function Home() {
             </div>
             <div>
               <p id="about_bio" className="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
-                <strong>Anri Laran</strong> (Андрей Ларионов) — современный художник, родившийся в Москве в 1970 году. В 1996 году с отличием окончил Академию Дизайна и Архитектуры. Его творческий путь — это непрерывный эксперимент на стыке геометрического экспрессионизма и постмодернизма.
+                <strong>Anri Laran</strong> (род. 1970) — концептуальный художник и основатель макро-концепции Полиформизма. Выпускник Академии Дизайна и Архитектуры (1996). Его творческий путь — это архитектоническая деконструкция реальности, реализуемая на стыке Полиформического экспрессионизма и Пост-геометрического гуманизма.
               </p>
               <blockquote id="about_quote" className="border-l-4 border-blue-600 pl-6 py-4 bg-blue-50 rounded italic text-gray-700 mb-6">
-                Мои работы — это синтез геометрии, многослойности и глубоких эмоций.
+                «Каждый мой холст — это авторская партитура, где угловая эмпатия форм преобразует пространственное напряжение в чистый хроматический катарсис».
               </blockquote>
               <p id="about_bio2" className="text-gray-600 leading-relaxed">
-                Работы Anri Laran представлены в галереях и частных коллекциях по всему миру. Его творчество исследует границы между реальностью и воображением, геометрией и хаосом, рациональностью и эмоцией.
+                Работы Anri Laran, включая этапные серии Grand Edition, зафиксированы в международном арт-пространстве как акты концептуального сопротивления цифровой стерильности. Его творчество исследует силовые узлы между аналоговой сингулярностью и энтропией авторского жеста, требуя от зрителя не пассивного потребления, а жесткого эстетического усилия.
               </p>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 id="style_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Стиль и Философия</h2>
           <p id="style_description" className="text-base md:text-lg text-gray-700 text-center mb-8 md:mb-12 leading-relaxed">
-            Стиль Anri Laran характеризуется динамичным слиянием строгих геометрических форм и эмоциональной глубины. Каждая работа — многослойное исследование человеческих переживаний, где цвет и линия создают уникальный визуальный язык, проникающий в подсознание зрителя.
+            Через форму, цветовые аккорды и уплотнение живописной материи Ларан переводит алгоритмическую стерильность в драматические геометрические партитуры живого человеческого присутствия. Каждая работа — многослойное исследование человеческих переживаний, где цвет и линия создают уникальный визуальный язык, проникающий в подсознание зрителя.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
@@ -277,7 +277,7 @@ export default function Home() {
       {/* Gallery Section */}
       <section id="works" className="py-12 md:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 id="works_title" className="font-bold mb-4 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Избранные Работы</h2>
+          <h2 id="works_title" className="font-bold mb-4 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Избранные Полотна</h2>
           <p id="works_subtitle" className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg">Динамика и Цвет</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
@@ -312,13 +312,13 @@ export default function Home() {
       {/* Exhibitions Section */}
       <section id="exhibitions" className="py-12 md:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 id="exhibitions_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Выставки</h2>
+          <h2 id="exhibitions_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Интервенции</h2>
           
           {/* Virtual Exhibition Block */}
           <div className="exhibition-container">
-            <h3 id="exhibition_virtual_title" className="text-xl md:text-2xl font-bold text-center mb-6 md:mb-8">Виртуальная персональная выставка 'Чувства, эмоции, смыслы'</h3>
+            <h3 id="exhibition_virtual_title" className="text-xl md:text-2xl font-bold text-center mb-6 md:mb-8">Виртуальная персональная интервенция «Чувства, эмоции, смыслы»</h3>
             <p id="exhibition_virtual_description" className="text-center text-gray-700 mb-8 md:mb-12 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-              Добро пожаловать в мой виртуальный музей. Перед вами персональная выставка "Чувства, эмоции, смыслы", охватывающая период моего творчества с 1993 по 2025 год. В экспозиции представлены ключевые работы разных этапов — от ранних поисков формы до зрелых произведений последних лет. Выставка даёт возможность проследить развитие моего визуального языка — полиформического экспрессионизма — и увидеть, как менялись формы, ритмы и эмоциональные акценты со временем. Благодарю за внимание и желаю вдумчивого просмотра.
+              Ретроспектива / Чувства, эмоции, смыслы / (1993–2025) — это манифест присутствия живого человеческого жеста в эпоху цифровой стерильности. Экспозиция деконструирует три десятилетия эволюции авторского визуального языка, где ранние геометрические партитуры сталкиваются с плотным хроматическим резонансом зрелого полиформического экспрессионизма. Виртуальное пространство лишь удерживает рамку для фиксации энтропии, ритмов и трансформации формы во времени. Вход открыт исключительно для вдумчивого анализа и бескомпромиссного эстетического напряжения.
             </p>
             
             {/* iframe Container */}
@@ -339,7 +339,7 @@ export default function Home() {
       {/* Publications Section */}
       <section id="media" className="py-12 md:py-20 bg-gradient-to-r from-blue-50 to-purple-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 id="media_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Публикации</h2>
+          <h2 id="media_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Дискурс</h2>
           
           {/* Publication Preview Card */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -383,7 +383,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-12 md:py-20 bg-gradient-to-r from-blue-50 to-purple-50">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 id="contact_title" className="font-bold mb-4 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Сотрудничество и Приобретение</h2>
+          <h2 id="contact_title" className="font-bold mb-4 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Координаты</h2>
           <p id="contact_subtitle" className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg">
             Для вопросов о приобретении работ, персональных заказах или сотрудничестве, пожалуйста, свяжитесь с нами.
           </p>
@@ -445,17 +445,17 @@ export default function Home() {
             <div>
               <h4 id="footer_about" className="font-semibold mb-4 text-base md:text-lg">Об Anri Laran</h4>
               <p id="footer_bio" className="text-gray-400 text-sm md:text-base leading-relaxed">
-                Современный художник, исследующий границы между реальностью и воображением через геометрический экспрессионизм.
+                Архитектор смыслов и защитник аналоговой сингулярности. Полиформический экспрессионизм как манифест безусловного присутствия живого человеческого жеста.
               </p>
             </div>
             <div>
               <h4 id="footer_nav" className="font-semibold mb-4 text-base md:text-lg">Навигация</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#about" className="hover:text-white transition" id="footer_about_link">Обо мне</a></li>
-                <li><a href="#works" className="hover:text-white transition" id="footer_works_link">Работы</a></li>
-                <li><a href="#exhibitions" className="hover:text-white transition" id="footer_exhibitions_link">Выставки</a></li>
-                <li><a href="#media" className="hover:text-white transition" id="footer_media_link">Медиа</a></li>
-                <li><a href="#contact" className="hover:text-white transition" id="footer_contact_link">Контакты</a></li>
+                <li><a href="#about" className="hover:text-white transition" id="footer_about_link">Манифест</a></li>
+                <li><a href="#works" className="hover:text-white transition" id="footer_works_link">Полотна</a></li>
+                <li><a href="#exhibitions" className="hover:text-white transition" id="footer_exhibitions_link">Интервенции</a></li>
+                <li><a href="#media" className="hover:text-white transition" id="footer_media_link">Дискурс</a></li>
+                <li><a href="#contact" className="hover:text-white transition" id="footer_contact_link">Координаты</a></li>
               </ul>
             </div>
             <div>
@@ -471,7 +471,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-            <p id="footer_copyright">© 2025 Anri Laran. Все права защищены.</p>
+            <p id="footer_copyright">© 2026 Anri Laran. Все права защищены.</p>
           </div>
         </div>
       </footer>
