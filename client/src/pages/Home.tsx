@@ -232,7 +232,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-12 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 id="about_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Художник, Педагог, Визионер</h2>
+          <h2 id="about_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Художник, Философ, Визионер</h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="rounded-lg flex items-center justify-center overflow-hidden bg-gray-50" style={{ height: '408px' }}>
                <img src="/artist-photo.jpg" alt="Anri Laran" className="h-full w-auto" id="about_portrait" />
