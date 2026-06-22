@@ -361,6 +361,9 @@ export default function Home() {
                   </h3>
                   
                   <div id="publication_snippet" className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 line-clamp-6" style={{ whiteSpace: 'pre-wrap' }}>
+                  Тишина в этих картинах не пустота, а работающая сила: она шлифует форму, вводит цвет в состояние речи и оставляет в слоях то, что боится быть сказанным вслух. Эта серия — попытка услышать молчание как живой голос, где каждый мазок и каждый фрагмент — часть разговора.
+
+                  Шёпот мастерской...
                   </div>
                   
                   <a 
