@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     // Load language preference from localStorage
-    const savedLang = localStorage.getItem("preferredLang") || "ru";
+    const savedLang = localStorage.getItem("preferredLang") || "en";
     setCurrentLang(savedLang);
     applyTranslation(savedLang);
   }, []);
