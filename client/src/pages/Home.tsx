@@ -261,10 +261,10 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
-              { id: "style_keyword1", text: "Геометрия" },
-              { id: "style_keyword2", text: "Эмоция" },
-              { id: "style_keyword3", text: "Многослойность" },
-              { id: "style_keyword4", text: "Эксперимент" },
+              { id: "style_keyword1", text: "Живая геометрия" },
+              { id: "style_keyword2", text: "Энтропия авторского жеста" },
+              { id: "style_keyword3", text: "Угловая эмпатия формы" },
+              { id: "style_keyword4", text: "Аналоговая сингулярность" },
             ].map((keyword) => (
               <div key={keyword.id} className="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
                 <p id={keyword.id} className="font-semibold text-blue-600 text-lg">{keyword.text}</p>
