@@ -7,7 +7,7 @@ export default function Home() {
   const [submitted, setSubmitted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState("ru");
+  const [currentLang, setCurrentLang] = useState("en");
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
