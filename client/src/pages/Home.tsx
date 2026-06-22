@@ -81,11 +81,11 @@ export default function Home() {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-4 md:gap-8 text-xs md:text-sm font-normal items-center">
-            <a href="#about" id="nav_about" className="hover:text-blue-600 transition">Манифест</a>
-            <a href="#works" id="nav_works" className="hover:text-blue-600 transition">Полотна</a>
-            <a href="#exhibitions" id="nav_exhibitions" className="hover:text-blue-600 transition">Интервенции</a>
-            <a href="#media" id="nav_media" className="hover:text-blue-600 transition">Дискурс</a>
-            <a href="#contact" id="nav_contact" className="hover:text-blue-600 transition">Координаты</a>
+            <a href="#about" id="nav_about" className="hover:text-blue-600 transition">Manifesto</a>
+            <a href="#works" id="nav_works" className="hover:text-blue-600 transition">Canvases</a>
+            <a href="#exhibitions" id="nav_exhibitions" className="hover:text-blue-600 transition">Intervention</a>
+            <a href="#media" id="nav_media" className="hover:text-blue-600 transition">Discourse</a>
+            <a href="#contact" id="nav_contact" className="hover:text-blue-600 transition">Coordinates</a>
             
             {/* Desktop Language Switcher */}
             <div className="relative ml-4 border-l border-gray-300 pl-4">
@@ -173,11 +173,11 @@ export default function Home() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 py-4 px-4 space-y-3 animate-in fade-in slide-in-from-top-2">
-            <a href="#about" onClick={closeMobileMenu} id="nav_about_mobile" className="block py-2 hover:text-blue-600 transition">Манифест</a>
-            <a href="#works" onClick={closeMobileMenu} id="nav_works_mobile" className="block py-2 hover:text-blue-600 transition">Полотна</a>
-            <a href="#exhibitions" onClick={closeMobileMenu} id="nav_exhibitions_mobile" className="block py-2 hover:text-blue-600 transition">Интервенции</a>
-            <a href="#media" onClick={closeMobileMenu} id="nav_media_mobile" className="block py-2 hover:text-blue-600 transition">Дискурс</a>
-            <a href="#contact" onClick={closeMobileMenu} id="nav_contact_mobile" className="block py-2 hover:text-blue-600 transition">Координаты</a>
+            <a href="#about" onClick={closeMobileMenu} id="nav_about_mobile" className="block py-2 hover:text-blue-600 transition">Manifesto</a>
+            <a href="#works" onClick={closeMobileMenu} id="nav_works_mobile" className="block py-2 hover:text-blue-600 transition">Canvases</a>
+            <a href="#exhibitions" onClick={closeMobileMenu} id="nav_exhibitions_mobile" className="block py-2 hover:text-blue-600 transition">Interventions/a>
+            <a href="#media" onClick={closeMobileMenu} id="nav_media_mobile" className="block py-2 hover:text-blue-600 transition">Discourse</a>
+            <a href="#contact" onClick={closeMobileMenu} id="nav_contact_mobile" className="block py-2 hover:text-blue-600 transition">Coordinates</a>
           </div>
         )}
       </nav>
@@ -205,10 +205,10 @@ export default function Home() {
             </div>
           </div>
           <h1 id="hero_title" className="font-bold mb-6 md:mb-8 tracking-tight" style={{ maxWidth: '560px', margin: '0 auto', fontSize: 'clamp(1.275rem, 5.525vw, 2.975rem)', textAlign: 'center' }}>
-            Форма которая говорит
+            Form That Speaks
           </h1>
           <p id="hero_subtitle" className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 md:mb-8 leading-relaxed">
-            Полиформический экспрессионизм: резонанс воли внутри живой партитуры
+            Polyformic Expressionism: resonance of will within the living score
           </p>
           <div className="flex gap-3 md:gap-4 justify-center flex-wrap">
             <Button
@@ -216,14 +216,14 @@ export default function Home() {
               className="bg-gray-400 hover:bg-gray-500 text-white px-4 md:px-8 py-2 md:py-3 text-sm md:text-lg"
               id="hero_btn_gallery"
             >
-              Смотреть Галерею
+              View Gallery
             </Button>
             <Button
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
               className="bg-gray-400 hover:bg-gray-500 text-white px-4 md:px-8 py-2 md:py-3 text-sm md:text-lg"
               id="hero_btn_contact"
             >
-              Связаться
+              Get in Touch
             </Button>
           </div>
         </div>
@@ -232,7 +232,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-12 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 id="about_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Художник, Философ, Визионер</h2>
+          <h2 id="about_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Artist, Philosopher, Visionary</h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="rounded-lg flex items-center justify-center overflow-hidden bg-gray-50" style={{ height: '408px' }}>
                <img src="/artist-photo.jpg" alt="Anri Laran" className="h-full w-auto" id="about_portrait" />
@@ -255,7 +255,7 @@ export default function Home() {
       {/* Style & Philosophy Section */}
       <section className="py-12 md:py-20 bg-gradient-to-r from-blue-50 to-purple-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 id="style_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Стиль и Философия</h2>
+          <h2 id="style_title" className="font-bold mb-8 md:mb-12 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Style and Philosophy</h2>
           <p id="style_description" className="text-base md:text-lg text-gray-700 text-center mb-8 md:mb-12 leading-relaxed">
             Через форму, цветовые аккорды и уплотнение живописной материи Ларан переводит алгоритмическую стерильность в драматические геометрические партитуры живого человеческого присутствия. Каждая работа — многослойное исследование человеческих переживаний, где цвет и линия создают уникальный визуальный язык, проникающий в подсознание зрителя.
           </p>
@@ -277,7 +277,7 @@ export default function Home() {
       {/* Gallery Section */}
       <section id="works" className="py-12 md:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 id="works_title" className="font-bold mb-4 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Избранные Полотна</h2>
+          <h2 id="works_title" className="font-bold mb-4 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Selected Canvases</h2>
           <p id="works_subtitle" className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg">Динамика и Цвет</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
