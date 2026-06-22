@@ -135,16 +135,16 @@ export default function Home() {
               {langMenuOpen && (
                 <div className="absolute right-0 mt-2 bg-white border border-gray-200 rounded shadow-lg z-50">
                   <button
-                    onClick={() => handleLanguageChange("ru")}
+                    onClick={() => handleLanguageChange("en")}
                     className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-xs"
                   >
-                    Ru
+                    En
                   </button>
                   <button
-                    onClick={() => handleLanguageChange("en")}
+                    onClick={() => handleLanguageChange("ru")}
                     className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-xs border-t border-gray-200"
                   >
-                    En
+                    Ru
                   </button>
                   <button
                     onClick={() => handleLanguageChange("fr")}
