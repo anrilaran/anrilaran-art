@@ -363,7 +363,7 @@ export default function Home() {
                   <div id="publication_snippet" className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 line-clamp-10" style={{ whiteSpace: 'pre-wrap' }}>
                   The silence in these paintings is not emptiness, but an active force: it polishes form, gives color a voice, and leaves within the layers what hesitates to be spoken aloud. This series is an attempt to hear silence as a living presence, where every brushstroke and every fragment becomes part of a quiet conversation.
 
-                  <span className="font-bold">Whispers of the Studio</span>
+                  <b>Whispers of the Studio</b>
 
                   The series emerged between 2024 and 2025 — not as a project, but as a response to a conscious decision to mute external noise. In the studio, canvases, oil and acrylic, fragments of collage, and delicate graphic lines became tools for a whispered dialogue: layer by layer, brushstroke by brushstroke
                   </div>
