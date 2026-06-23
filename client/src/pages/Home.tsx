@@ -175,7 +175,7 @@ export default function Home() {
           <div className="md:hidden bg-white border-t border-gray-200 py-4 px-4 space-y-3 animate-in fade-in slide-in-from-top-2">
             <a href="#about" onClick={closeMobileMenu} id="nav_about_mobile" className="block py-2 hover:text-blue-600 transition">Manifesto</a>
             <a href="#works" onClick={closeMobileMenu} id="nav_works_mobile" className="block py-2 hover:text-blue-600 transition">Canvases</a>
-            <a href="#exhibitions" onClick={closeMobileMenu} id="nav_exhibitions_mobile" className="block py-2 hover:text-blue-600 transition">Interventions/a>
+            <a href="#exhibitions" onClick={closeMobileMenu} id="nav_exhibitions_mobile" className="block py-2 hover:text-blue-600 transition">Interventions</a>
             <a href="#media" onClick={closeMobileMenu} id="nav_media_mobile" className="block py-2 hover:text-blue-600 transition">Discourse</a>
             <a href="#contact" onClick={closeMobileMenu} id="nav_contact_mobile" className="block py-2 hover:text-blue-600 transition">Coordinates</a>
           </div>
