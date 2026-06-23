@@ -360,7 +360,7 @@ export default function Home() {
                     "Emotions" — When Silence Finds a Voice
                   </h3>
                   
-                  <div id="publication_snippet" className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 line-clamp-6" style={{ whiteSpace: 'pre-wrap' }}>
+                  <div id="publication_snippet" className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 line-clamp-10" style={{ whiteSpace: 'pre-wrap' }}>
                   The silence in these paintings is not emptiness, but an active force: it polishes form, gives color a voice, and leaves within the layers what hesitates to be spoken aloud. This series is an attempt to hear silence as a living presence, where every brushstroke and every fragment becomes part of a quiet conversation.
 
                   Whispers of the Studio
