@@ -357,13 +357,15 @@ export default function Home() {
               <div className="md:col-span-2 p-6 md:p-8 flex flex-col justify-between">
                 <div>
                   <h3 id="publication_title" className="text-xl md:text-2xl font-bold mb-4 text-gray-900">
-                    Эмоции — Когда тишина умеет говорить
+                    "Emotions" — When Silence Finds a Voice
                   </h3>
                   
                   <div id="publication_snippet" className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 line-clamp-6" style={{ whiteSpace: 'pre-wrap' }}>
-                  Тишина в этих картинах не пустота, а работающая сила: она шлифует форму, вводит цвет в состояние речи и оставляет в слоях то, что боится быть сказанным вслух. Эта серия — попытка услышать молчание как живой голос, где каждый мазок и каждый фрагмент — часть разговора.
+                  The silence in these paintings is not emptiness, but an active force: it polishes form, gives color a voice, and leaves within the layers what hesitates to be spoken aloud. This series is an attempt to hear silence as a living presence, where every brushstroke and every fragment becomes part of a quiet conversation.
 
-                  Шёпот мастерской...
+                  Whispers of the Studio
+
+                  The series emerged between 2024 and 2025 — not as a project, but as a response to a conscious decision to mute external noise. In the studio, canvases, oil and acrylic, fragments of collage, and delicate graphic lines became tools for a whispered dialogue: layer by layer, brushstroke by brushstroke
                   </div>
                   
                   <a 
