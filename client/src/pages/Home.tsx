@@ -87,13 +87,14 @@ export default function Home() {
             <a href="#media" id="nav_media" className="hover:text-blue-600 transition">Discourse</a>
             <a href="#contact" id="nav_contact" className="hover:text-blue-600 transition">Coordinates</a>
             
-            {/* Desktop Language Switcher */}
+            
+           {/* Desktop Language Switcher */}
             <div className="relative ml-4 border-l border-gray-300 pl-4">
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
                 className="flex items-center gap-1 text-xs md:text-sm font-normal hover:text-blue-600 transition"
               >
-                <span id="lang_display">{currentLang === "ru" ? "Ru" : currentLang === "en" ? "En" : "Fr"}</span>
+                <span id="lang_display">{currentLang === "ru" ? "Ru" : currentLang === "en" ? "En" : currentLang === "sv" ? "Sv" : "Fr"}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
               {langMenuOpen && (
@@ -116,10 +117,19 @@ export default function Home() {
                   >
                     Fr
                   </button>
+
+                  <button
+                    onClick={() => handleLanguageChange("sv")}
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-xs md:text-sm border-t border-gray-200"
+                  >
+                    Sv
+                  </button>
+
                 </div>
               )}
             </div>
           </div>
+
           
           {/* Mobile Menu Button and Language Switcher */}
           <div className="md:hidden flex items-center gap-2">
@@ -129,7 +139,7 @@ export default function Home() {
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
                 className="flex items-center gap-1 text-xs font-normal hover:text-blue-600 transition p-2"
               >
-                <span id="lang_display_mobile">{currentLang === "ru" ? "Ru" : currentLang === "en" ? "En" : "Fr"}</span>
+                <span id="lang_display_mobile">{currentLang === "ru" ? "RU" : currentLang === "en" ? "EN" : currentLang === "sv" ? "SV" : "FR"}</span>
                 <ChevronDown className="w-3 h-3" />
               </button>
               {langMenuOpen && (
@@ -151,6 +161,13 @@ export default function Home() {
                     className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-xs border-t border-gray-200"
                   >
                     Fr
+                  </button>
+
+                  <button
+                    onClick={() => handleLanguageChange("sv")}
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-xs border-t border-gray-200"
+                  >
+                    Sv
                   </button>
                 </div>
               )}
