@@ -278,26 +278,90 @@ export default function Home() {
       <section id="works" className="py-12 md:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 id="works_title" className="font-bold mb-4 text-center" style={{ fontSize: 'clamp(1.105rem, 4.675vw, 2.55rem)' }}>Selected Canvases</h2>
-          <p id="works_subtitle" className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg">Динамика и Цвет</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {[
-              { img: "/01_Three_Grraces_s.jpg", titleId: "work1_title", descId: "work1_desc", title: "Три грации", desc: "холст, масло, 2025" },
-              { img: "/02_Guardian_s.jpg", titleId: "work2_title", descId: "work2_desc", title: "Хранитель", desc: "холст, масло, 2025" },
-              { img: "/03_Balerina_s.jpg", titleId: "work3_title", descId: "work3_desc", title: "Балерина и пуанты", desc: "холст, масло, 2025" },
-              { img: "/04_Reflection_s.jpg", titleId: "work4_title", descId: "work4_desc", title: "Отражение", desc: "холст, масло, 2025" },
-              { img: "/05_Cat_s.jpg", titleId: "work5_title", descId: "work5_desc", title: "Кошка", desc: "холст, масло, 2025" },
-              { img: "/06_Hot_dance_s.jpg", titleId: "work6_title", descId: "work6_desc", title: "Горячий танец", desc: "холст, масло, 2025" },
-            ].map((work, idx) => (
-              <div key={idx} className="group cursor-pointer">
-                <div className="rounded-lg aspect-square mb-4 flex items-center justify-center overflow-hidden hover:shadow-lg transition">
-                  <img src={work.img} alt={work.title} className="w-full h-full object-cover" />
+          <p id="works_subtitle" className="text-center text-gray-600 mb-12 md:mb-16 text-base md:text-lg">Динамика и Цвет</p>
+
+          {/* ========================================================================= */}
+          {/* ЭТАП 1: ЭМОЦИИ (ЭТОТ БЛОК ОСТАЕТСЯ БЕЗ ИЗМЕНЕНИЙ, КАК БЫЛ У ВАС) */}
+          {/* ========================================================================= */}
+          <div className="mb-16 md:mb-24">
+            <h3 id="gallery_title_emotions" className="text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-8 pb-2 border-b border-gray-200 text-center">
+              «Эмоции» — 2025 – настоящее время
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              {[
+                { img: "/01_Three_Grraces_s.jpg", titleId: "work1_title", descId: "work1_desc", title: "Три грации", desc: "холст, масло, 2025" },
+                { img: "/02_Guardian_s.jpg", titleId: "work2_title", descId: "work2_desc", title: "Хранитель", desc: "холст, масло, 2025" },
+                { img: "/03_Balerina_s.jpg", titleId: "work3_title", descId: "work3_desc", title: "Балерина и пуанты", desc: "холст, масло, 2025" },
+                { img: "/04_Reflection_s.jpg", titleId: "work4_title", descId: "work4_desc", title: "Отражение", desc: "холст, масло, 2025" },
+                { img: "/05_Cat_s.jpg", titleId: "work5_title", descId: "work5_desc", title: "Кошка", desc: "холст, масло, 2025" },
+                { img: "/06_Hot_dance_s.jpg", titleId: "work6_title", descId: "work6_desc", title: "Горячий танец", desc: "холст, масло, 2025" },
+              ].map((work, idx) => (
+                <div key={idx} className="group cursor-pointer">
+                  <div className="rounded-lg aspect-square mb-4 flex items-center justify-center overflow-hidden hover:shadow-lg transition">
+                    <img src={work.img} alt={work.title} className="w-full h-full object-cover" />
+                  </div>
+                  <h3 id={work.titleId} className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition">{work.title}</h3>
+                  <p id={work.descId} className="text-sm text-gray-500">{work.desc}</p>
                 </div>
-                <h3 id={work.titleId} className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition">{work.title}</h3>
-                <p id={work.descId} className="text-sm text-gray-500">{work.desc}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <div className="text-center mt-12">
+
+          {/* ========================================================================= */}
+          {/* ЭТАП 2: ЧУВСТВА (НОВЫЙ ДОБАВЛЕННЫЙ БЛОК) */}
+          {/* ========================================================================= */}
+          <div className="mb-16 md:mb-24">
+            <h3 id="gallery_title_feelings" className="text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-8 pb-2 border-b border-gray-200 text-center">
+              «Чувства» — 2000 – 2020
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              {[
+                { img: "/feelings_1.jpg", titleId: "feelings1_title", descId: "feelings1_desc", title: "Ожидание", desc: "холст, масло, 2007" },
+                { img: "/feelings_2.jpg", titleId: "feelings2_title", descId: "feelings2_desc", title: "Три грации", desc: "холст, масло 2007" },
+                { img: "/feelings_3.jpg", titleId: "feelings3_title", descId: "feelings3_desc", title: "Обнаженная на красном", desc: "холст, масло 2005" },
+                { img: "/feelings_4.jpg", titleId: "feelings4_title", descId: "feelings4_desc", title: "Скорпион", desc: "холст, масло 2017" },
+                { img: "/feelings_5.jpg", titleId: "feelings5_title", descId: "feelings5_desc", title: "Дама с веерами", desc: "холст, масло 2007" },
+                { img: "/feelings_6.jpg", titleId: "feelings6_title", descId: "feelings6_desc", title: "Обнаженная на желтои", desc: "холст, масло 2008" },
+              ].map((work, idx) => (
+                <div key={idx} className="group cursor-pointer">
+                  <div className="rounded-lg aspect-square mb-4 flex items-center justify-center overflow-hidden hover:shadow-lg transition">
+                    <img src={work.img} alt={work.title} className="w-full h-full object-cover" />
+                  </div>
+                  <h3 id={work.titleId} className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition">{work.title}</h3>
+                  <p id={work.descId} className="text-sm text-gray-500">{work.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ========================================================================= */}
+          {/* ЭТАП 3: ГЕНЕЗИС (НОВЫЙ ДОБАВЛЕННЫЙ БЛОК) */}
+          {/* ========================================================================= */}
+          <div className="mb-12">
+            <h3 id="gallery_title_genesis" className="text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-8 pb-2 border-b border-gray-200 text-center">
+              «Генезис» — 1992 – 2000
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              {[
+                { img: "/genesis_1.jpg", titleId: "genesis1_title", descId: "genesis1_desc", title: "Автобусная остановка", desc: "холст, масло, 1992" },
+                { img: "/genesis_2.jpg", titleId: "genesis2_title", descId: "genesis2_desc", title: "Бегун", desc: "холст, масло 1993" },
+                { img: "/genesis_3.jpg", titleId: "genesis3_title", descId: "genesis3_desc", title: "Игроки в покер", desc: "холст, масло 1995" },
+                { img: "/genesis_4.jpg", titleId: "genesis4_title", descId: "genesis4_desc", title: "Вода", desc: "холст, масло 1993" },
+                { img: "/genesis_5.jpg", titleId: "genesis5_title", descId: "genesis5_desc", title: "Алжирская женщина", desc: "холст, масло 1993" },
+                { img: "/genesis_6.jpg", titleId: "genesis6_title", descId: "genesis6_desc", title: "Воспоминанаия молодого ветерана", desc: "холст, масло 1995" },
+              ].map((work, idx) => (
+                <div key={idx} className="group cursor-pointer">
+                  <div className="rounded-lg aspect-square mb-4 flex items-center justify-center overflow-hidden hover:shadow-lg transition">
+                    <img src={work.img} alt={work.title} className="w-full h-full object-cover" />
+                  </div>
+                  <h3 id={work.titleId} className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition">{work.title}</h3>
+                  <p id={work.descId} className="text-sm text-gray-500">{work.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center mt-16 md:mt-20">
             <Button
               onClick={() => window.open("https://www.saatchiart.com/anrilaran", "_blank")}
               className="bg-gray-400 hover:bg-gray-500 text-white px-8 py-3 text-lg"
